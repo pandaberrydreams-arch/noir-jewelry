@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPALIA — Jewelry shaped by light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="top">
+  <canvas id="gl"></canvas>
+  <div class="veil" id="veil"></div>
+
+  <nav class="nav" id="nav">
+    <a class="nav-brand" href="#top">OPALIA</a>
+    <div class="nav-links">
+      <a href="#collection">Collection</a>
+      <a href="#story">Story</a>
+      <a href="#materials">Materials</a>
+    </div>
+    <a href="#collection" class="nav-cta">Discover</a>
+  </nav>
+
+  <!-- Fixed cinematic captions for the 3D journey -->
+  <div class="captions">
+    <div class="cap cap-center" id="cap-brand">
+      <h1 class="brand-title">OPALIA</h1>
+      <p class="credit-subtitle">An immersive jewelry experience</p>
+      <p class="credit-studio">by <em>Kate</em> <span class="credit-amp">&amp;</span> Click</p>
+    </div>
+    <div class="cap cap-center cap-below" id="cap-tag"><p class="tagline">Jewelry shaped by light.</p></div>
+    <div class="cap cap-left" id="cap-ring"><span class="eyebrow">01 — Solenne</span><p class="cap-line">A sculptural ring, revealed by light.</p></div>
+    <div class="cap cap-center" id="cap-enter"><p class="tagline">Enter the stone.</p></div>
+    <div class="cap cap-left" id="cap-radiance"><span class="eyebrow">Mood 01</span><h2 class="mood">Radiance</h2><p class="cap-line">Light that stays with you.</p></div>
+    <div class="cap cap-right" id="cap-grace"><span class="eyebrow">Mood 02</span><h2 class="mood">Grace</h2><p class="cap-line">Movement, held in form.</p></div>
+    <div class="cap cap-left" id="cap-power"><span class="eyebrow">Mood 03</span><h2 class="mood">Power</h2><p class="cap-line">Presence without excess.</p></div>
+    <div class="cap cap-center" id="cap-rise"><p class="tagline">Ascend.</p></div>
+    <div class="cap cap-center cap-monument" id="cap-monument">
+      <h2 class="brand-title sm">OPALIA</h2>
+      <p class="tagline">Light, set in form.</p>
+      <a href="#collection" class="link-cta">Discover the collection</a>
+    </div>
+    <div class="scroll-hint" id="hint"><span class="hint-line"></span>Scroll</div>
+  </div>
+
+  <!-- Scroll track for the immersive 3D chapters -->
+  <div class="track" id="track"></div>
+
+  <!-- SECTION 08 — Collection -->
+  <section class="sec collection" id="collection">
+    <header class="sec-head">
+      <span class="eyebrow">01 — The Collection</span>
+      <h2 class="display">Three pieces,<br><em>one language of light.</em></h2>
+    </header>
+    <div class="pieces">
+      <article class="piece piece-a">
+        <div class="slot" data-object="ring" data-depth="6" data-fit="0.82"></div>
+        <div class="piece-meta"><h3>Solenne</h3><span class="cat">Sculptural ring</span><p>Opalescent stone set in polished silver.</p></div>
+      </article>
+      <article class="piece piece-b">
+        <div class="slot" data-object="pendant" data-depth="6" data-fit="0.9"></div>
+        <div class="piece-meta"><h3>Elara</h3><span class="cat">Pendant</span><p>Light suspended in a refined architectural form.</p></div>
+      </article>
+      <article class="piece piece-c">
+        <div class="slot" data-object="earrings" data-depth="6" data-fit="0.62"></div>
+        <div class="piece-meta"><h3>Veya</h3><span class="cat">Earrings</span><p>Balanced movement, polished metal, luminous stone.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECTION 09 — Signature spotlight -->
+  <section class="sec spotlight" id="spotlight">
+    <div class="spot-sticky">
+      <div class="slot slot-spot" data-object="ring" data-depth="5.2" data-fit="0.88" data-scroll-rotate="1"></div>
+      <div class="spot-copy">
+        <span class="eyebrow">02 — Signature piece</span>
+        <h2 class="display">Solenne</h2>
+        <p class="lead">A sculptural ring designed around light, balance, and presence.</p>
+        <ul class="mat-list"><li>Opalescent gemstone</li><li>Polished silver</li><li>Hand-finished setting</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10 — Story -->
+  <section class="sec story" id="story">
+    <div class="slot slot-story" data-object="fragment" data-depth="7" data-fit="0.9"></div>
+    <span class="eyebrow">03 — Story</span>
+    <h2 class="display xl">Jewelry that begins<br><em>with light.</em></h2>
+    <div class="story-copy">
+      <p>OPALIA explores the space between material and emotion.</p>
+      <p>Each piece is imagined as a small architecture of light — shaped to catch movement, reflection, and presence.</p>
+      <p class="em">Designed to feel timeless, but never quiet.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 11 — Craftsmanship -->
+  <section class="sec materials" id="materials">
+    <span class="eyebrow">04 — Craftsmanship</span>
+    <div class="mat-row">
+      <div class="slot slot-macro" data-object="macroGem" data-depth="4.5" data-fit="0.95"></div>
+      <div class="mat-text"><span class="num">I</span><h3>Light</h3><p>Gemstones selected for depth, refraction, and changing color.</p></div>
+    </div>
+    <div class="mat-row rev">
+      <div class="slot slot-macro" data-object="macroArc" data-depth="4.5" data-fit="0.9"></div>
+      <div class="mat-text"><span class="num">II</span><h3>Form</h3><p>Sculptural silhouettes shaped around movement and balance.</p></div>
+    </div>
+    <div class="mat-row">
+      <div class="slot slot-macro" data-object="macroBand" data-depth="4.5" data-fit="0.9"></div>
+      <div class="mat-text"><span class="num">III</span><h3>Finish</h3><p>Polished surfaces designed to interact with light from every angle.</p></div>
+    </div>
+  </section>
+
+  <!-- SECTION 12 — Final CTA -->
+  <section class="sec cta" id="cta">
+    <div class="slot slot-cta" data-object="ctaGem" data-depth="7" data-fit="1.05"></div>
+    <div class="cta-inner">
+      <h2 class="display xl">Wear the light.</h2>
+      <p class="lead">Discover the OPALIA collection.</p>
+      <div class="cta-row"><a href="#collection" class="btn">Explore the collection</a><a href="#story" class="link">Our story</a></div>
+    </div>
+  </section>
+
+  <!-- SECTION 13 — Footer -->
+  <footer class="footer">
+    <div class="foot-top">
+      <span class="foot-brand">OPALIA</span>
+      <nav class="foot-nav"><a href="#collection">Collection</a><a href="#story">Story</a><a href="#materials">Materials</a><a href="javascript:void(0)">Contact</a></nav>
+      <div class="foot-social"><a href="javascript:void(0)">Instagram</a><a href="javascript:void(0)">Pinterest</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>Jewelry shaped by light.</span>
+      <span class="foot-credit">A concept by <em>Kate</em> <span class="credit-amp">&amp;</span> Click</span>
+      <span>© 2026 OPALIA</span>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
